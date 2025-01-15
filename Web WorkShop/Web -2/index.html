@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            display: flex;
+            width: 80%;
+            max-width: 1200px;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .left {
+            flex: 1;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .left h1 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .left p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .left form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .left input {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .left button {
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .left button:hover {
+            background-color: #0056b3;
+        }
+
+        .left a {
+            font-size: 0.9rem;
+            color: #007bff;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .left a:hover {
+            text-decoration: underline;
+        }
+
+        .right {
+            flex: 1;
+            background: #ffeb3b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 30px;
+        }
+
+        .right h2 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .right img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .footer {
+            font-size: 0.8rem;
+            color: #555;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Log in to Snapchat</h1>
+            <p>Chat, Snap, and video call your friends. Watch Stories and Spotlight, all from your computer.</p>
+            <form>
+                <input type="text" placeholder="Username or email address">
+                <input type="password" placeholder="Password">
+                <button type="submit">Log in</button>
+                <a href="#">Use phone number instead</a>
+            </form>
+            <p class="footer">Are you a parent? Learn what we're doing to help keep <a href="#">Snapchatters safe</a>.</p>
+        </div>
+        <div class="right">
+            <img src="images/snap.png" alt="Snapchat Fun" width="800" height="500">
+        </div>
+    </div>
+</body>
+</html>
