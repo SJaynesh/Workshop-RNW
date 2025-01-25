@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram-Inspired Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #fafafa;
+        }
+
+        .container {
+            display: flex;
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 950px;
+            width: 100%;
+        }
+
+        .mobile-view {
+            display: none;
+            background: url('images/mobileImage.jpg') no-repeat center center;
+            background-size: contain;
+            width: 50%;
+            height: 600px;
+        }
+
+        .login-form {
+            flex: 1;
+            padding: 40px 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login-form img {
+            width: 175px;
+            margin-bottom: 20px;
+        }
+
+        .login-form form {
+            width: 100%;
+            max-width: 350px;
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 4px;
+            background: #fafafa;
+            outline: none;
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #0095f6;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .login-form button:hover {
+            background-color: #0073e6;
+        }
+
+        .divider {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            color: #8e8e8e;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #dbdbdb;
+            margin: 0 10px;
+        }
+
+        @media (min-width: 768px) {
+            .mobile-view {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="mobile-view"></div>
+        <div class="login-form">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png"
+                alt="Instagram Logo">
+            <form>
+                <input type="text" placeholder="Phone number, username, or email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Log In</button>
+                <div class="divider">OR</div>
+                <button type="button" style="background-color: #385185; color: white;">Log in with Facebook</button>
+                <p style="color: #8e8e8e; font-size: 12px; margin-top: 10px;">Forgot password?</p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
